@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.main .container #home #pic{
+    height: 700px;
+ 
+    /* Edit inside this comment */
+    background-image: url("placeholder.jpg") ;
+    /* Edit inside this comment */
+    margin-bottom: 2rem;
+    
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(244, 244, 245);
+}
+
+.header{
+    background-color: rgb(217, 215, 221);    
+    padding:.4em;
+
+}
+
+.links{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:.3rem;
+}
+
+#resume button{
+    text-decoration: none;
+    color:rgb(196, 167, 167);
+    font-size: 1.35rem;
+    margin: .5em;
+    padding:0.5em;
+    color: rgb(243, 231, 231);
+    background-color: rgb(95, 115, 103);
+    border-radius: 5%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.header .link{
+    font-size: 1.35rem;
+    margin: .5em;
+    padding:0.5em;
+    background-color: rgb(106, 90, 205);
+    border-radius: 5%;
+}
+
+.header .link:hover{
+    background-color: rgb(0, 0, 128);
+}
+
+.link{
+    text-align: center;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+.header .container .links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.header .container .links a:hover{
+    color: rgb(245, 222, 179);    
+}
+
+#home{
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+
+#projects, #resume, #about, #contact{
+    
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+@media (max-width:768px){
+
+    .main .container #home #pic{
+        
+        /* Edit inside this comment */       
+        background-image: url("placeholder.jpg") ;
+        /* Edit inside this comment */
+        margin-bottom: 1.5rem;
+        
+        background-color: #cccccc;
+        height: 500px;
+        border-radius: 50px  ;
+    }
+    #home{
+        padding: 3rem;
+        font-size: 2rem;
+    }
+    
+    
+    #projects, #resume, #about, #contact{
+        font-size: 1.4rem;
+    }
+    
+
+}
+@media (max-width:576px){
+
+    .main .container #home #pic{
+
+        /* Edit inside this comment */
+        background-image: url("placeholder.jpg") ;
+        /* Edit inside this comment */
+        margin-bottom: 1rem;
+
+        background-color: #cccccc;
+        border-radius: 210px ;
+        height: 420px;
+    }
+    
+    .links{        
+        display: flex;
+        flex-direction: column-reverse;
+        padding:.3rem;
+    }
+
+    #home{
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+    
+    #projects, #resume, #about, #contact{
+        font-size: 1.2rem;
+    }
+}
+
+#home, #projects, #resume, #about, #contact{
+    text-align: center;
+}
+
+/* footer */
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.footer{
+    background-color: rgb(88, 86, 94)
+}
+
+.wrapper{
+    min-height: 100%;
+    margin-bottom: -70px;;
+}
+
+.wrapper::after{
+    content: "";
+    display: block;
+}
+.wrapper::after,footer{
+    height: 70px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer .fab{
+    margin: 19px;
+}
+/* xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px */
